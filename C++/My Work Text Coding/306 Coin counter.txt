@@ -1,0 +1,36 @@
+// Coin counter
+// Aiden Henry EC1522660
+
+
+
+#include <iostream>
+using namespace std;
+
+
+int Coins;
+int i;
+float Value;
+float Money = 0;
+
+
+
+void main()
+
+{
+
+	cout <<"Please enter the amount of coins you wish to count?"<< endl;
+	cin >> Coins;
+	cout <<"You have entered "<<Coins<<" ""please remember to enter pound values like 1.00 or 2.00"<< endl;
+		for (i = 1;i <= Coins; i++)
+		{
+		cout <<"What is the value of the "<< i <<" coin?"<< endl;
+		cin >> Value;
+		Money += Value;
+		}
+		
+	cout <<"You have "<<Coins<<" coins with a total value of "<< Money << endl;
+	
+	system("pause");
+}
+
+

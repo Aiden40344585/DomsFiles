@@ -1,0 +1,34 @@
+// 413 Carpet bagger
+// Aiden Henry EC1522660
+
+#include <iostream>
+using namespace std; 
+
+void main()
+{
+float area = 0;
+float areaTotal = 0;
+float length = 0;
+float width = 0;
+char continueYN;
+
+
+	cout <<"Welcome to carpet floor calculator"<< endl;
+	cout <<"This program will ask the length and width of each floor \n and will ask if you would like to calculate another floor"<< endl;
+			
+			do
+				{
+				cout << "Please enter the length of the floor"<< endl;
+				cin >> length;
+				cout << "Please enter the width of the room"<< endl;
+				cin >> width;
+				area = length * width;
+				areaTotal += area;
+				cout << "Would you like to continue Y for yes or N for no."<< endl;
+				cin >> continueYN;
+				}while (continueYN == 'y'|| continueYN == 'Y');
+		
+	cout << "The total area to carpet is "<<areaTotal<<endl<<endl;
+
+system ("pause");
+}

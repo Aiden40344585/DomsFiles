@@ -1,0 +1,21 @@
+// Km to Miles conversion
+#include <iostream>
+using namespace std;
+
+
+float Multiplication (float num1,float num2)
+{
+	return num1*num2;
+}
+
+void main()
+{
+float num1;
+float num2 = 0.62;
+	
+	cout << "Hi, please enter the amount of km's to be converted to miles.";
+    cin >> num1;
+	cout << "Answer:"<<Multiplication(num1,num2)<<" " "miles"<<endl;
+	
+system("pause");
+}

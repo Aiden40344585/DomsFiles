@@ -1,0 +1,21 @@
+// Weight Conversion
+#include <iostream>
+using namespace std;
+
+
+float Multiplication (float num1,float num2)
+{
+	return num1*num2;
+}
+
+void main()
+{
+float num1;
+float num2 = 2.2;
+	
+	cout << "Hi, please enter the weight in Kilograms.";
+    cin >> num1;
+	cout << "Answer:"<<Multiplication(num1,num2)<<"lbs"<<endl;
+	
+system("pause");
+}

@@ -1,0 +1,24 @@
+// 407 Would you like to continue
+// Aiden Henry EC1522660
+
+
+#include <iostream>
+using namespace std; 
+
+void main()
+{
+int Score;
+int ScoreTotal = 0;
+
+
+do
+	{
+	cout << "Please enter the score"<<endl;
+	cin >> Score;
+	ScoreTotal += Score;
+	}while (Score != 0);
+	
+	cout << "The Score is "<<ScoreTotal<<endl<<endl;
+
+system ("pause");
+}

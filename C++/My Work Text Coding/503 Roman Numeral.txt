@@ -1,0 +1,81 @@
+// 503 Roman Numerals
+// Aiden Henry EC1522660
+
+#include <iostream>
+using namespace std; 
+char Roman;
+int scoreTotal = 1001;
+int sum = 0;
+
+
+void main()
+{
+	cout << "Please enter the Roman numbers, please enter Q when you like to convert" <<endl;
+	do
+	{
+		cin >> Roman;
+		switch (Roman)
+		{
+		case 'M':
+			sum += 1000;
+			if(scoreTotal < 1000)
+			{
+				sum -= 2 * scoreTotal;
+			}
+			scoreTotal = 1000;
+			break;
+		case 'D':
+			sum += 500;
+			if(scoreTotal < 500)
+			{
+				sum -= 2 * scoreTotal;
+			}
+			scoreTotal = 500;
+			break;
+		case 'C':
+			sum += 100;
+			if(scoreTotal < 100)
+			{
+				sum -= 2 * scoreTotal;
+			}
+			scoreTotal = 100;
+			break;
+		case 'L':
+			sum += 50;
+			if(scoreTotal < 50)
+			{
+				sum -= 2 * scoreTotal;
+			}
+			scoreTotal = 50;
+			break;
+		case 'X':
+			sum += 10;
+			if(scoreTotal < 10)
+			{
+				sum -= 2 * scoreTotal;
+			}
+			scoreTotal = 10;
+			break;
+		case 'V':
+			sum += 5;
+			if(scoreTotal < 5)
+			{
+				sum -= 2 * scoreTotal;
+			}
+			scoreTotal = 5;
+			break;
+		case 'I':
+			sum += 1;
+			if(scoreTotal < 1)
+			{
+				sum -= 2 * scoreTotal;
+			}
+			scoreTotal = 1;
+			break;
+		}
+
+	}while (Roman != 'Q');
+	cout << "Your converted number is "<<sum<<endl;
+
+system ("pause");
+}

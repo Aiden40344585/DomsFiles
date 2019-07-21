@@ -1,0 +1,63 @@
+// exercise 2.11
+// Aiden Henry EC1522660
+
+#include <iostream>
+using namespace std;
+
+//Declaration
+// For some reason this did not work when height was a float, converted to double
+char Sex;
+int age;
+double height; 
+
+int main()
+	// Requesting Information
+	// Asking Age
+
+{
+	int age;
+	cout <<"Please enter your age:"<< endl << endl;
+	cin >> age;
+	if (age <=17)
+	{
+		cout <<"Sorry but you must be at least 18 to apply"<< endl << endl;
+		return main();
+	}
+	if (age >=18)
+	{
+		cout <<"Please enter your sex, \nM for Male F for Female:"<< endl << endl;
+		cin >> Sex;
+	}
+
+	// Asking Sex
+	if (Sex == 'M' || Sex == 'm')
+	{
+		//Asking Male Height
+		cout <<"Please enter you height in meters:"<< endl << endl;
+		cin >> height;
+	if (height >= 1.8)
+		cout <<"You are eligible for employment."<< endl << endl;
+	if (height <=1.7)
+		cout <<"You are not eligible, min height requied 1.8 meters."<< endl << endl;
+		return main();
+	}
+	if (Sex == 'F' || Sex == 'f')
+	{
+		//Asking Female Height
+		cout <<"Please enter you height in meters:"<< endl << endl;
+		cin >> height;
+	if (height >= 1.6)
+		cout <<"You are eligible for employment."<< endl << endl;
+	if (height <=1.5)
+		cout <<"You are not eligible, min height requied 1.6 meters."<< endl << endl;
+		return main();
+	}
+	else
+	{
+		cout << "Sorry you must choose between M and F" << endl << endl;
+		return main();
+	}
+	
+	
+system ("pause");
+}

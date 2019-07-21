@@ -1,0 +1,33 @@
+// exercise 2.08
+// Aiden Henry EC1522660
+
+#include <iostream>
+using namespace std;
+
+//Declaration
+float const Dolar = 1.50;
+float const Euro = 1.20;
+int choice;
+
+void main()
+	// Requesting Information
+{
+	float pound;
+	cout <<"Please enter the amount of pounds you wish to convert:"<< endl << endl;
+	cin >> pound;
+	cout <<"What would you like to convert it too: 1 for Dolars, or 2 for Euro's"<< endl << endl;
+	cin >> choice;
+	if (choice == 1)
+	{
+		cout <<"Answer:"<<(pound * Dolar)<< endl;
+	}
+	if (choice == 2)
+	{
+		cout <<"Answer:"<< (pound * Euro)<< endl;
+	}
+	else
+		cout << endl << "You must type '1' or '2'";
+
+system ("pause");
+}
+

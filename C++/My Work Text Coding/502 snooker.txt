@@ -1,0 +1,54 @@
+// 502 Snooker
+// Aiden Henry EC1522660
+
+#include <iostream>
+using namespace std; 
+char ball;
+int scoreTotal = 0;
+
+
+void main()
+{
+	cout << "Please enter which ball you have potted \nR for Red, Y for Yellow, G for Green, B for Brown, L for Blue, \nP for Pink and A for Black" <<endl;
+	do
+	{
+		cin >> ball;
+		switch (ball)
+			{		
+			case 'R':
+			cout << "RED, 1 Point"<< endl;
+			scoreTotal += 1;
+			break;
+			case 'Y':
+			cout << "YELLOW, 2 Points"<< endl;
+			scoreTotal += 2;
+			break;
+			case 'G':
+			cout << "GREEN, 3 Points"<< endl;
+			scoreTotal += 3;
+			break;
+			case 'B':
+			cout << "BROWN, 4 Points"<< endl;
+			scoreTotal += 4;
+			break;
+			case 'L':
+			cout << "BLUE, 5 Points"<< endl;
+			scoreTotal += 5;
+			break;
+			case 'P':
+			cout << "PINK, 6 Points"<< endl;
+			scoreTotal += 6;
+			break;
+			case 'A':
+			cout << "BLACK, 7 Points"<< endl;
+			scoreTotal += 7;
+			break;
+			case 'M':
+			cout << "MISS, No Points"<< endl;
+			break;
+			}
+	}while (ball != 'M');
+	cout << "Your Break Score is "<<scoreTotal<<" Points"<<endl;
+
+system ("pause");
+}

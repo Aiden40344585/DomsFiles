@@ -1,0 +1,25 @@
+// 406 Would you like to continue
+// Aiden Henry EC1522660
+
+
+#include <iostream>
+using namespace std; 
+
+void main()
+{
+int Score;
+int ScoreTotal = 0;
+char yesno;
+do
+
+{
+	cout << "Please enter the score"<<endl;
+	cin >> Score;
+	ScoreTotal += Score;
+	cout << "The Score is "<<ScoreTotal<<". Would you like to continue?"<<endl;
+	cin >> yesno;
+} 
+while (yesno == 'y');	
+
+system ("pause");
+}

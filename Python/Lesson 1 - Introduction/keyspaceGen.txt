@@ -1,0 +1,19 @@
+# Script:  keyspace.py
+# Desc:    Calculate keyspace/entropy of password
+# Author:  
+# Created: 
+
+import sys, math
+
+def get_keyspace(passwd):
+	"""prints the entropy value for an ascii password"""
+	print ('[*] keyspace')
+	char_set = 95
+	keyspace = 0 # ... ADD YOUR CODE HERE ...
+	print ('[*] Password:', passwd, '- Total of:', str(keyspace),
+               'key combinations')
+	
+# test case
+passwd = 'test' # change the passwd variable to test
+# call keyspace calc function
+get_keyspace(passwd)

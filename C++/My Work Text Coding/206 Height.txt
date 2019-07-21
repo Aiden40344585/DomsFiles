@@ -1,0 +1,23 @@
+// exercise 2.06
+// Aiden Henry EC1522660
+
+#include <iostream>
+using namespace std;
+
+void main()
+// Requesting heightvalue
+
+{
+	float height;
+	cout <<"Please enter you height in meters:"<< endl << endl;
+	cin >> height;
+
+	if (height >= 2.0)
+		cout <<"You are very tall"<< endl << endl;
+	if (height <=1.8)
+		cout <<"You are not tall"<< endl << endl;
+	if (height < 1.99 && height > 1.81)
+		cout <<"You are quite tall"<< endl << endl;
+
+system ("pause");
+}

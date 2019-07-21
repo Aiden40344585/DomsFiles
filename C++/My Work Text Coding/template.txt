@@ -1,0 +1,24 @@
+// 411 Would you like to continue
+// Aiden Henry EC1522660
+
+
+#include <iostream>
+using namespace std; 
+
+void main()
+{
+int coins;
+int coinsTotal = 0;
+
+
+do
+	{
+	cout << "Please enter the amount of coins"<<endl;
+	cin >> coins;
+	coinsTotal += coins;
+	}while (coins != 0);
+	
+	cout << "The Score is "<<coinsTotal<<endl<<endl;
+
+system ("pause");
+}

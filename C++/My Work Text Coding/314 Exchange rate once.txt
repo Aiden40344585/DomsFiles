@@ -1,0 +1,42 @@
+// 314 Exchange Rate Once
+// Aiden Henry EC1522660
+
+
+
+#include <iostream>
+using namespace std;
+
+
+const int x = 5;
+int i;
+float Pounds;
+float Exchange;
+float Euros;
+float TotalEuro;
+float TotalPound;
+
+void main()
+
+{
+
+	cout <<"Welcome to the Pounds to Euro multiple converter."<< endl;
+	cout <<"I will ask you 5 times for the amount of Pounds to be converted and also the \nEuro exchange rate you wish to convert at"<<endl;
+
+	cout <<"What is the exchange rate you wish to use?"<< endl << endl;
+		cin >> Exchange;
+
+	for (i = 1;i <= x; i++)
+		
+		{
+		cout <<" "<<i<<" What is the amount of Pounds you wish to convert "<< endl << endl;
+		cin >> Pounds;
+		Euros = Pounds * Exchange;
+		TotalEuro += Euros;
+		TotalPound += Pounds;
+		cout <<"The "<<Pounds<<" pounds you entered would convert using the exhange rate of "<<Exchange<<" \nwould give you "<<Euros<<" Euros."<< endl << endl;
+		}
+		
+	cout <<"Total amount of "<<TotalPound<<" Pounds and "<<TotalEuro<<" Euros."<< endl;	
+	system("pause");
+}
+

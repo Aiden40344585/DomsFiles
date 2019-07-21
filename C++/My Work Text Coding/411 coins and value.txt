@@ -1,0 +1,29 @@
+// 411 Coins and value
+// Aiden Henry EC1522660
+
+#include <iostream>
+using namespace std; 
+
+void main()
+{
+float coinsValue;
+float coinsTotal = 0;
+char continueYN;
+
+
+	cout <<"Hello this program will ask for the value of coins and ask if you want to \ncontinue at the end it will give you the total amount"<< endl;
+	cout <<"Please remember to enter pound values like 1.00 or 2.00"<< endl;
+			
+			do
+				{
+				cout << "Please enter the Value of coins"<<endl;
+				cin >> coinsValue;
+				coinsTotal += coinsValue;
+				cout << "Would you like to continue Y for yes or N for no."<< endl;
+				cin >> continueYN;
+				}while (continueYN == 'y'|| continueYN == 'Y');
+		
+	cout << "The Value is "<<coinsTotal<<endl<<endl;
+
+system ("pause");
+}

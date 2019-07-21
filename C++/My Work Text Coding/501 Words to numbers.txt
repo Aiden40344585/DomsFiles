@@ -1,0 +1,40 @@
+// 501 Numbers to words
+// Aiden Henry EC1522660
+#include <iostream>
+
+using namespace std;
+
+int oper;
+char continueYN;
+
+void main()
+{
+	do
+		{
+		cout << "Please enter the number" << endl;
+		cin >>oper;
+		switch (oper)
+			{		
+			case 1:
+			cout << "ONE"<< endl;
+			break;
+			case 2:
+			cout << "TWO"<< endl;
+			break;
+			case 3:
+			cout << "THREE"<< endl;
+			break;
+			case 4:
+			cout << "FOUR"<< endl;
+			break;
+			case 5:
+			cout << "FIVE"<< endl;
+			break;
+			default :
+			cout << "YOU MUST PRESS 1,2,3,4 OR 5" << endl;
+			}
+		cout << "Would you like to continue Y for yes or N for no."<< endl;
+		cin >> continueYN;
+		}while (continueYN == 'y'|| continueYN == 'Y');
+system ("pause");
+}

@@ -1,0 +1,22 @@
+// celsius to fahrenheit
+#include <iostream>
+using namespace std;
+
+
+float calc (float num1)
+{
+	// copied equation from www.ehow.com/how_5989992_convert-celsius-fahrenheit-c__.html
+	return num1*(9.0/5.0)+32;
+}
+
+void main()
+{
+float num1;
+
+	
+	cout << "Hi, please enter the tempeture in Celsius to convert it to Fahrenheit.";
+    cin >> num1;
+	cout << "Answer:"<<calc(num1)<<" " "Fahrenheit"<<endl;
+	
+system("pause");
+}
